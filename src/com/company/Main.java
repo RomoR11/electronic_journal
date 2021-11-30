@@ -50,5 +50,50 @@ public class Main {
         Section S = new Section("Весёлая математика", Learners1, T);
         Section S1 = new Section("British Bulldog", Learners2, T1);
 
+        Leaner[] Learners3 = new Leaner[2];
+        Learners3[0] = L;
+        Learners3[1] = L3;
+
+        Elective e = new Elective("Профильная матиматика", Learners3, T);
+
+        Participant p = new Participant(0101, "Агафонов Валентин Игнатьевич", 354389821);
+
+        C.getList();
+        C.getListParents();
+        e.getList();
+        e.getListParents();
+        S.getList();
+        S.getListParents();
+        S1.getList();
+        S1.getListParents();
+
+        Employee[] Employees = new Employee[3];
+        Employees[0] = E;
+        Employees[1] = E1;
+        Employees[2] = E2;
+
+        Teacher[] Teachers = new Teacher[3];
+        Teachers[0] = T;
+        Teachers[1] = T1;
+        Teachers[2] = T2;
+
+        Class[] Classes = new Class[1];
+        Classes[0] = C;
+
+        Elective[] Electives = new Elective[1];
+        Electives[0] = e;
+
+        Section[] Sections = new Section[2];
+        Sections[0] = S;
+        Sections[1] = S1;
+
+
+
+        School s = new School(Employees, Teachers, Learners, "Некрасова 9", "МБОУ ПТЛ", Classes, Electives, Sections);
+        s.getListEmployers();
+        s.getListLearners();
+        s.getListTeachers();
+        s.getParticipants(1112);
+
     }
 }

@@ -1,6 +1,6 @@
 package com.company;
 
-public class Person extends School {
+public class Person {
     public String FullName;
     public int Phone;
 

@@ -1,6 +1,6 @@
 package com.company;
 
-public class Elective extends School {
+public class Elective {
    public String AcademicSubject;
     public Leaner[] Learners;
     public Teacher ClassTeacher;

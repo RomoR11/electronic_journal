@@ -1,14 +1,25 @@
 package com.company;
 
 public class School {
-    public Employee[] Employees = {};
-    public Teacher[] Teachers = {};
-    public Leaner[] Learners = {};
+    public Employee[] Employees;
+    public Teacher[] Teachers;
+    public Leaner[] Learners;
     public String Address;
     public String Name;
-    public Class[] Classes = {};
-    public Elective[] Electives = {};
-    public Section[] Sections = {};
+    public Class[] Classes;
+    public Elective[] Electives;
+    public Section[] Sections;
+
+    public School(Employee[] E, Teacher[] T, Leaner[] L, String A, String N, Class[] C, Elective[] E1, Section[] S){
+        Employees = E;
+        Teachers = T;
+        Learners = L;
+        Address = A;
+        Name = N;
+        Classes = C;
+        Electives = E1;
+        Sections = S;
+    }
 
     public void getListTeachers() {
         for (Teacher t : Teachers) {

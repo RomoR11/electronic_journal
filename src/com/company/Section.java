@@ -1,6 +1,6 @@
 package com.company;
 
-public class Section extends School {
+public class Section {
    public String Name;
     public Leaner[] Learners;
     public Teacher ClassTeacher;
