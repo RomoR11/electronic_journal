@@ -18,7 +18,10 @@ public class Class {
      }
     public void getListParents(){
         for (Leaner p : Learners) {
-            System.out.println(p.Parents);
+            for (Parent pp: p.Parents
+                 ) {
+                System.out.println(pp.FullName);
+            }
         }
     }
 }

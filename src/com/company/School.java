@@ -37,7 +37,9 @@ public class School {
     public void getListLearners() {
         for (Leaner l : Learners) {
             System.out.println(l.FullName);
-            System.out.println(l.Parents);
+            for (Parent p2 : l.Parents) {
+                System.out.println(p2.FullName);
+            }
         }
     }
 
